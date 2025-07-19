@@ -64,7 +64,7 @@ namespace Restaurant.Data
                     Description = "Beef Taco description",
                     Price = 2.50m,
                     Stock = 100,
-                    CategoryId = "2",
+                    CategoryId = 2,
                 },
                 new Product
                 {
@@ -73,7 +73,7 @@ namespace Restaurant.Data
                     Description = "Chicken Taco description",
                     Price = 3.50m,
                     Stock = 10,
-                    CategoryId = "2",
+                    CategoryId = 2,
                 },
                 new Product
                 {
@@ -82,7 +82,7 @@ namespace Restaurant.Data
                     Description = "Fish Taco description",
                     Price = 5.50m,
                     Stock = 20,
-                    CategoryId = "2",
+                    CategoryId = 2,
                 }
             );
 
