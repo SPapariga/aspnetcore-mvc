@@ -1,0 +1,14 @@
+# Visual Studio files
+.vs/
+*.user
+*.suo
+
+# Build folders
+bin/
+obj/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
