@@ -1,0 +1,37 @@
+﻿@using System.Text.Json
+@model Ingredient
+@{
+    ViewBag.Title = "Ingredient Details";
+}
+<h1>@Model.Name Details</h1>
+
+@* <pre>
+@Html.Raw(JsonSerializer.Serialize(Model.ProductIngredients, new JsonSerializerOptions { WriteIndented = true }))
+</pre> *@
+
+@if (Model.ProductIngredients != null && Model.ProductIngredients.Any())
+{
+    <h4>Products</h4>
+    <table class="table">
+        <thead>
+            <th>Product Item</th>
+            <th>Description</th>
+            <th>Price</th>
+        </thead>
+        <tbody>
+            @foreach (var productIngredient in Model.ProductIngredients)
+            {
+                <tr>
+                    <td>@productIngredient.Product.Name</td>
+                    <td>@productIngredient.Product.Description</td>
+                    <td>@productIngredient.Product.Price</td>
+                </tr>
+                
+            }
+        </tbody>
+   </table>
+}
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
